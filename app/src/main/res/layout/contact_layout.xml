@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/gradient_bg"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+    <ImageView
+        android:id="@+id/contact_image"
+        android:src="@drawable/defaultuser"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <RelativeLayout
+        android:id="@+id/data_field"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/contact_image">
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="@string/contact_name"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/phone_num"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_name"
+            android:textSize="12sp"
+            android:text="@string/phone_num"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/next_button"
+        android:src="@drawable/icon_next"
+        android:contentDescription="@string/app_name"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/data_field"
+        android:layout_alignParentRight="true"
+        android:layout_width="28dp"
+        android:layout_height="28dp" />
+
+</RelativeLayout>
